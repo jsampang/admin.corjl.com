@@ -6752,7 +6752,7 @@ h2.title {
 }
 
 .main-panel > .content {
-  margin-top: 70px;
+  margin-top: 58px;
   padding: 30px 15px;
   min-height: calc(100vh - 123px);
 }
@@ -9677,8 +9677,8 @@ select.form-control[multiple],
 
 .table > thead > tr > th {
   border-bottom-width: 1px;
-  font-size: 1.25em;
-  font-weight: 300;
+  font-size: 1.05em;
+  font-weight: 500;
 }
 
 .tab-pane .table tbody > tr > td:first-child {
@@ -12224,7 +12224,7 @@ footer .btn {
 .dropdown-menu li a:hover,
 .dropdown-menu li a:focus,
 .dropdown-menu li a:active {
-  background-color: #9c27b0;
+  background-color: #68839a;
   color: #FFFFFF;
 }
 
@@ -12376,8 +12376,10 @@ footer .btn {
 }
 
 .card .category:not([class*="text-"]) {
-  color: #999999;
-  font-size: 14px;
+    color: #6b6b6b;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .card .category a .material-icons {
@@ -14154,14 +14156,83 @@ footer .btn {
 }
 
 .ml-5 {
-    margin-left: 5px
+  margin-left: 5px
 }
+
 .mr-5 {
-    margin-right: 5px
+  margin-right: 5px
 }
+
 .mb-5 {
-    margin-bottom: 5px
+  margin-bottom: 5px
 }
+
 .mt-5 {
-    margin-top: 5px
+  margin-top: 5px
 }
+
+.ml-10 {
+  margin-left: 10px
+}
+
+.mr-10 {
+  margin-right: 10px
+}
+
+.mb-10 {
+  margin-bottom: 10px
+}
+
+.mt-10 {
+  margin-top: 10px
+}
+
+.ml-25 {
+  margin-left: 25px
+}
+
+.mr-25 {
+  margin-right: 25px
+}
+
+.mb-25 {
+  margin-bottom: 25px
+}
+
+.mt-25 {
+  margin-top: 25px
+}
+
+.clear {
+  clear: both;
+}
+
+.form-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.toolbar {
+    margin-top: -15px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-entry label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.page-entry select {
+    width: 75px;
+    display: inline-block;
+}
+
