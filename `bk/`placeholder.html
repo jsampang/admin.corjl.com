@@ -1,309 +1,47 @@
-<!-- Promo 
-<% extends '/template/base/admin-template' %>
-<% block content %>
-<$ super() $>
-<div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-icon" data-background-color="red">
-                        <i class="material-icons">local_offer</i>
-                    </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Promo Codes</h4>
-                        <div class="toolbar">
-                            <div class="form-toolbar">
-                                <div>
-                                    <form class="navbar-form navbar-right" role="search">
-                                        <div class="form-group form-search is-empty">
-                                            <input type="text" class="form-control" placeholder=" Search ">
-                                            <span class="material-input"></span>
-                                        </div>
-                                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                            <i class="material-icons">search</i>
-                                            <div class="ripple-container"></div>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div>
-                                    <input type="text" class="form-control datepicker" value="" placeholder="Date Range" />
-                                </div>
-                                <div>
-                                    <select class="selectpicker" data-style="select-with-transition" multiple title="Status" data-size="7">
-                                        <option value="2">Active</option>
-                                        <option value="3">Inactive</option>
-                                        <option value="4">Inactive No Payment</option>
-                                    </select>
-                                </div>
-                                <div class="dropdown">
-                                    <button type="button" class="btn btn-round btn-info dropdown-toggle" data-toggle="dropdown">
-                                        <i class="material-icons">build</i>
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                        <li><a href="#"><i class="material-icons">note_add</i> Add </a></li>
-                                        <li><a href="#"><i class="material-icons">edit</i> Edit </a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#"><i class="material-icons">delete_outline</i> Delete </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <div class="checkbox ml-5">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                </label>
-                                            </div>
-                                        </th>
-                                        <th>Code</th>
-                                        <th>Offers</th>
-                                        <th>Qty</th>
-                                        <th># Used</th>
-                                        <th>Eligible</th>
-                                        <th>Starts</th>
-                                        <th>Expires</th>
-                                        <th>Offer Duration</th>
-                                        <th>Single Use</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <# Item 1 #>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox ml-5">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>FREE-30</td>
-                                        <td>$0.00</td>
-                                        <td>Monthly Fee</td>
-                                        <td>10</td>
-                                        <td>0</td>
-                                        <td>All</td>
-                                        <td>11/30/2018</td>
-                                        <td>1 Year</td>
-                                        <td>Yes</td>
-                                        <td><span class="label label-success">Active</span></td>
-                                    </tr>
-                                    <# Item 2 #>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox ml-5">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>EXTEND6</td>
-                                        <td>$0.00</td>
-                                        <td>Monthly Fee</td>
-                                        <td>10</td>
-                                        <td>0</td>
-                                        <td>All</td>
-                                        <td>11/30/2018</td>
-                                        <td>1 Year</td>
-                                        <td>Yes</td>
-                                        <td><span class="label label-default">Expired</span></td>
-                                    </tr>
-                                    <# Item 3 #>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox ml-5">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>STUFF99</td>
-                                        <td>$0.00</td>
-                                        <td>Monthly Fee</td>
-                                        <td>23</td>
-                                        <td>9</td>
-                                        <td>All</td>
-                                        <td>11/04/2018</td>
-                                        <td>1 Year</td>
-                                        <td>Yes</td>
-                                        <td><span class="label label-danger">Inactive</span></td>
-                                    </tr>
-                                    <# Item 4 #>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox ml-5">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>FREE-30</td>
-                                        <td>$0.00</td>
-                                        <td>Monthly Fee</td>
-                                        <td>10</td>
-                                        <td>0</td>
-                                        <td>All</td>
-                                        <td>11/30/2018</td>
-                                        <td>1 Year</td>
-                                        <td>Yes</td>
-                                        <td><span class="label label-success">Active</span></td>
-                                    </tr>
-                                    <# Item 5 #>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox ml-5">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>ETSY12</td>
-                                        <td>$0.00</td>
-                                        <td>Monthly Fee</td>
-                                        <td>10</td>
-                                        <td>0</td>
-                                        <td>All</td>
-                                        <td>11/30/2018</td>
-                                        <td>1 Year</td>
-                                        <td>Yes</td>
-                                        <td><span class="label label-success">Active</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="form-toolbar mt-25">
-                            <div class="page-entry">
-                                <label class="form-group">Show
-                                    <select class="form-control">
-                                        <option value="10">10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="-1">All</option>
-                                    </select> Entries
-                                </label>
-                            </div>
-                            <div>
-                                <ul class="pagination pagination-info">
-                                    <li><a href="javascript:void(0);"> prev</a></li>
-                                    <li><a href="javascript:void(0);">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li class="active"><a href="javascript:void(0);">3</a></li>
-                                    <li><a href="javascript:void(0);">4</a></li>
-                                    <li><a href="javascript:void(0);">5</a></li>
-                                    <li><a href="javascript:void(0);">next </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<% endblock %> -->
+<section class="top-content">
+  <div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-main" data-slide-to="1" class=""></li>
+      <li data-target="#carousel-main" data-slide-to="2" class=""></li>
+      <li data-target="#carousel-main" data-slide-to="3" class=""></li>
+      <li data-target="#carousel-main" data-slide-to="4" class=""></li>
+      <li data-target="#carousel-main" data-slide-to="5" class=""></li>
+      <li data-target="#carousel-main" data-slide-to="6" class=""></li>
+      <li data-target="#carousel-main" data-slide-to="7" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active"><img src="https://cdn.ulsinc.com/assets/images/home/5aaad1dc76b6747d02165d4a/ultra_introduction_1.jpg" alt="Ultra Hero Image 1"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727e576b6745f7c7d8b73/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_shop.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Shop"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727fd76b674728e422635/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_studio.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Studio"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/5aaad1ec76b6747d0c6840bc/ultra_introduction_2.jpg" alt="Ultra Hero Image 2"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c7279b76b6744f833b34f3/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_lab.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Lab"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727cf76b67463442db864/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_school.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in School"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727ba76b67456f235aca7/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_production.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Production"></div>
+      <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c7278676b67469cb0fa49e/uls_laser_system_(also_known_as_laser_cutter)_at_work_creating_prototype.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work Creating Prototype"></div>
+    </div><a class="left carousel-control" href="#carousel-main" role="button"><span class="fa fa-angle-left" aria-hidden="true"></span></a><a class="right carousel-control" href="#carousel-main" role="button"><span class="fa fa-angle-right" aria-hidden="true"></span></a>
+  </div>
+</section>
 
-<!-- Admin
-<% extends '/template/base/admin-template' %>
-<% block content %>
-<$ super() $>
-<div class="content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header" data-background-color="orange">
-                        <i class="material-icons">local_offer</i>
-                    </div>
-                    <div class="card-content">
-                        <p class="category">Promo Codes</p>
-                        <h3 class="card-title">20</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons">pageview</i> <a href="#pablo">View All Promos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header" data-background-color="rose">
-                        <i class="material-icons">assignment</i>
-                    </div>
-                    <div class="card-content">
-                        <p class="category">Reports</p>
-                        <h3 class="card-title">19</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons">trending_up</i> Tracked from RADP
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header" data-background-color="green">
-                        <i class="material-icons">supervisor_account</i>
-                    </div>
-                    <div class="card-content">
-                        <p class="category">Seller</p>
-                        <h3 class="card-title">30</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons">account_box</i> Last 5 Days
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header" data-background-color="blue">
-                        <i class="material-icons">attach_money</i>
-                    </div>
-                    <div class="card-content">
-                        <p class="category">Sales</p>
-                        <h3 class="card-title">$3,000</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons">update</i> Just Updated
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header card-header-icon" data-background-color="red">
-                        <i class="material-icons">directions_run</i>
-                    </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Recent Activity</h4>
-                        <div>Content</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header card-header-icon" data-background-color="red">
-                        <i class="material-icons">email</i>
-                    </div>
-                    <div class="card-content">
-                        <h4 class="card-title">Suggestion Box</h4>
-                        <div>Content</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<% endblock %> -->
+
+<div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-main" data-slide-to="0" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="1" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="2" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="3" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="4" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="5" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="6" class=""></li>
+    <li data-target="#carousel-main" data-slide-to="7" class="active"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/5aaad1dc76b6747d02165d4a/ultra_introduction_1.jpg" alt="Ultra Hero Image 1"></div>
+    <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727e576b6745f7c7d8b73/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_shop.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Shop"></div>
+    <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727fd76b674728e422635/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_studio.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Studio"></div>
+    <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/5aaad1ec76b6747d0c6840bc/ultra_introduction_2.jpg" alt="Ultra Hero Image 2"></div>
+    <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c7279b76b6744f833b34f3/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_lab.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Lab"></div>
+    <div class="item"><img src="https://cdn.ulsinc.com/assets/images/home/58c727cf76b67463442db864/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_school.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in School"></div>
+    <div class="item active left"><img src="https://cdn.ulsinc.com/assets/images/home/58c727ba76b67456f235aca7/uls_laser_system_(also_known_as_laser_cutter)_at_work_in_production.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work in Production"></div>
+    <div class="item next left"><img src="https://cdn.ulsinc.com/assets/images/home/58c7278676b67469cb0fa49e/uls_laser_system_(also_known_as_laser_cutter)_at_work_creating_prototype.jpg" alt="ULS Laser System (Also Known as Laser Cutter) at Work Creating Prototype"></div>
+  </div><a class="left carousel-control" href="#carousel-main" role="button"><span class="fa fa-angle-left" aria-hidden="true"></span></a><a class="right carousel-control" href="#carousel-main" role="button"><span class="fa fa-angle-right" aria-hidden="true"></span></a></div>
