@@ -10,6 +10,7 @@
   <title>Corjl.com | Admin</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" >
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CMaterial+Icons" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -83,7 +84,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="seller.html">
+                  <a href="sellers.html">
                     <span class="sidebar-mini">&nbsp;</span>
                     <span class="sidebar-normal"> Seller </span>
                   </a>
@@ -167,7 +168,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"> Admin Panel </a>
+            <span class="navbar-brand"> Admin Panel </span>
           </div>
           <div class="collapse navbar-collapse">
             <form class="navbar-form navbar-right" role="search">
@@ -185,12 +186,13 @@
       </nav>
       <!-- Content -->  
       <div class="content">
-          <div class="container-fluid">  
+          <div class="container-fluid"> 
+            
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
                   <div class="card-header" data-background-color="orange">
-                    <i class="material-icons">local_offer</i>
+                    <i class="fas fa-tags fa-2x"></i>
                   </div>
                   <div class="card-content">
                     <p class="category">Promo Codes</p>
@@ -207,7 +209,7 @@
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
                   <div class="card-header" data-background-color="rose">
-                    <i class="material-icons">assignment</i>
+                    <i class="fas fa-clipboard-list fa-2x"></i>
                   </div>
                   <div class="card-content">
                     <p class="category">Reports</p>
@@ -221,11 +223,10 @@
                 </div>
               </div>
 
-
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
                   <div class="card-header" data-background-color="green">
-                    <i class="material-icons">supervisor_account</i>
+                    <i class="fas fa-users fa-2x"></i>
                   </div>
                   <div class="card-content">
                     <p class="category">Seller</p>
@@ -242,7 +243,7 @@
               <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
                   <div class="card-header" data-background-color="blue">
-                    <i class="material-icons">attach_money</i>
+                    <i class="fas fa-dollar-sign fa-2x"></i>
                   </div>
                   <div class="card-content">
                     <p class="category">Sales</p>
@@ -256,31 +257,76 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            
+            <div class="row mt-25">
               
               <div class="col-md-8">
                 <div class="card">
                   <div class="card-header card-header-icon" data-background-color="red">
-                    <i class="material-icons">directions_run</i>
+                    <i class="fas fa-walking fa-2x"></i>
                   </div>
                   <div class="card-content">
                     <h4 class="card-title">Recent Activity</h4>
-                    <div style="height: 400px">Content</div>
+                                   
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Organization</th>
+                            <th>Creator</th>
+                            <th>Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item 1 -->
+                          <tr>
+                            <td>Test Dashboard</td>
+                            <td>Dashboard</td>
+                            <td>Corjl</td>
+                            <td>Joven Sampang</td>
+                            <td>07/20/2018</td>
+                          </tr>
+                          <!-- Item 2 -->
+                          <tr>
+                            <td>Add Content</td>
+                            <td>Dashboard</td>
+                            <td>Corjl</td>
+                            <td>Chris Cotty</td>
+                            <td>02/03/2018</td>
+                          </tr>
+                          <!-- Item 3 -->
+                          <tr>
+                            <td>Update User</td>
+                            <td>Pages</td>
+                            <td>Corjl</td>
+                            <td>Trevor O'Hara</td>
+                            <td>02/03/2018</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
               
               <div class="col-md-4">
-                <div class="card">
-                  <div class="card-header card-header-icon" data-background-color="red">
-                    <i class="material-icons">email</i>
+                <div class="card card-profile">
+                  <div class="card-avatar">               
+                      <i class="far fa-envelope fa-2x text-white"></i>                 
                   </div>
                   <div class="card-content">
                     <h4 class="card-title">Suggestion Box</h4>
-                    <div style="height: 400px">Content</div>
+                    <div class="form-group label-floating">
+                      <textarea class="form-control" rows="3" placeholder="I would like to suggest..."></textarea>
+                      <span class="material-input"></span></div>
+                    <a href="#" class="btn btn-rose btn-round">Submit</a>
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
       </div>

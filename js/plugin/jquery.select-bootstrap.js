@@ -1,21 +1,3 @@
- /*!
-  * Bootstrap-select v1.12.2 (http://silviomoreto.github.io/bootstrap-select)
-  *
-  * Copyright 2013-2017 bootstrap-select
-  * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
-  */
-
-  /*
-
-
-       Creative Tim Modifications
-
-       Line: 379-380 - we changed glyphicons with material-icons.
-       Line: 593 - we put tickIcon inside of span tag.
-
-
-  */
-
  (function (root, factory) {
    if (typeof define === 'function' && define.amd) {
      // AMD. Register as an anonymous module unless amdModuleId is set

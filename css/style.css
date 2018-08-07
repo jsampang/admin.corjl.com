@@ -55,9 +55,7 @@
 }
 
 
-/* Painting and performance;
- * Browsers can paint handles in their own layer.
- */
+/* Painting and performance Browsers can paint handles in their own layer */
 
 .noUi-base,
 .noUi-handle {
@@ -66,8 +64,7 @@
 }
 
 
-/* Slider size and handle placement;
- */
+/* Slider size and handle placement */
 
 .noUi-horizontal {
   height: 2px;
@@ -99,8 +96,7 @@
 }
 
 
-/* Styling;
- */
+/* Styling */
 
 .noUi-target {
   background-color: #c8c8c8;
@@ -115,8 +111,7 @@
 }
 
 
-/* Handles and cursors;
- */
+/* Handles and cursors */
 
 .noUi-draggable {
   cursor: ew-resize;
@@ -147,8 +142,7 @@
 }
 
 
-/* Disabled state;
- */
+/* Disabled state */
 
 [disabled] .noUi-connect {
   background: #B8B8B8;
@@ -161,9 +155,7 @@
 }
 
 
-/* Base;
- *
- */
+/* Base */
 
 .noUi-pips,
 .noUi-pips * {
@@ -177,9 +169,7 @@
 }
 
 
-/* Values;
- *
- */
+/* Values */
 
 .noUi-value {
   position: absolute;
@@ -192,9 +182,7 @@
 }
 
 
-/* Markings;
- *
- */
+/* Markings */
 
 .noUi-marker {
   position: absolute;
@@ -210,9 +198,7 @@
 }
 
 
-/* Horizontal layout;
- *
- */
+/* Horizontal layout */
 
 .noUi-pips-horizontal {
   padding: 10px 0;
@@ -242,9 +228,7 @@
 }
 
 
-/* Vertical layout;
- *
- */
+/* Vertical layout */
 
 .noUi-pips-vertical {
   padding: 0 10px;
@@ -348,12 +332,7 @@
 }
 
 
-/*
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
+/* Animate.css */
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -2150,11 +2129,7 @@ svg {
 }
 
 
-/*!
- * Datetimepicker for Bootstrap 3
- * ! version : 4.7.14
- * https://github.com/Eonasdan/bootstrap-datetimepicker/
- */
+/* Datetimepicker for Bootstrap 3 version : 4.7.14 https://github.com/Eonasdan/bootstrap-datetimepicker/ */
 
 .sr-only,
 .bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after,
@@ -2548,12 +2523,7 @@ svg {
   z-index: 1;
 }
 
-
-/*!
- * FullCalendar v3.0.1 Stylesheet
- * Docs & License: http://fullcalendar.io/
- * (c) 2016 Adam Shaw
- */
+/* FullCalendar v3.0.1 Stylesheet */
 
 .fc {
   direction: ltr;
@@ -2565,13 +2535,10 @@ svg {
 }
 
 body .fc {
-  /* extra precedence to overcome jqui */
   font-size: 1em;
 }
 
-
-/* Colors
---------------------------------------------------------------------------------------------------*/
+/* Colors */
 
 .fc-unthemed th,
 .fc-unthemed td,
@@ -2623,8 +2590,7 @@ body .fc {
 }
 
 
-/* Icons (inline elements with styled text that mock arrow icons)
---------------------------------------------------------------------------------------------------*/
+/* Icons */
 
 .fc-icon {
   display: inline-block;
@@ -2642,15 +2608,6 @@ body .fc {
   -ms-user-select: none;
   user-select: none;
 }
-
-
-/*
-Acceptable font-family overrides for individual icons:
-	"Arial", sans-serif
-	"Times New Roman", serif
-
-NOTE: use percentage font sizes or else old IE chokes
-*/
 
 .fc-icon:after {
   position: relative;
@@ -2707,8 +2664,7 @@ NOTE: use percentage font sizes or else old IE chokes
 }
 
 
-/* Buttons (styled <button> tags, normalized to work cross-browser)
---------------------------------------------------------------------------------------------------*/
+/* Buttons */
 
 .fc button {
   border: none;
@@ -2860,7 +2816,6 @@ fieldset[disabled] .fc button.btn-primary.active {
 	border-bottom-right-radius: 4px;
 }*/
 
-
 /* icons in buttons */
 
 .fc button .fc-icon {
@@ -2872,11 +2827,7 @@ fieldset[disabled] .fc button.btn-primary.active {
   vertical-align: middle;
 }
 
-
-/*
-  button states
-  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
-*/
+/* button states borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/) */
 
 .fc-state-hover,
 .fc-state-down,
@@ -2911,18 +2862,12 @@ fieldset[disabled] .fc button.btn-primary.active {
 }
 
 
-/* Buttons Groups
---------------------------------------------------------------------------------------------------*/
+/* Buttons Groups */
 
 .fc-button-group {
   display: inline-block;
 }
 
-
-/*
-every button that is not first in a button group should scootch over one pixel and cover the
-previous button's border...
-*/
 
 .fc .fc-button-group > * {
   /* extra precedence b/c buttons have margin set to zero */
@@ -2936,8 +2881,7 @@ previous button's border...
 }
 
 
-/* Popover
---------------------------------------------------------------------------------------------------*/
+/* Popover */
 
 .fc-popover {
   position: absolute;
@@ -2989,8 +2933,7 @@ previous button's border...
 }
 
 
-/* Misc Reusable Components
---------------------------------------------------------------------------------------------------*/
+/* Misc Reusable Components */
 
 .fc-divider {
   border-style: solid;
@@ -3031,8 +2974,7 @@ hr.fc-divider {
 }
 
 
-/* Tables
---------------------------------------------------------------------------------------------------*/
+/* Tables */
 
 .fc table {
   width: 100%;
@@ -3063,8 +3005,7 @@ hr.fc-divider {
 }
 
 
-/* Internal Nav Links
---------------------------------------------------------------------------------------------------*/
+/* Internal Nav Links */
 
 a[data-goto] {
   cursor: pointer;
@@ -3075,8 +3016,7 @@ a[data-goto]:hover {
 }
 
 
-/* Fake Table Rows
---------------------------------------------------------------------------------------------------*/
+/* Fake Table Rows */
 
 .fc .fc-row {
   /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
@@ -3100,8 +3040,7 @@ a[data-goto]:hover {
 }
 
 
-/* Day Row (used within the header and the DayGrid)
---------------------------------------------------------------------------------------------------*/
+/* Day Row (used within the header and the DayGrid) */
 
 .fc-row {
   position: relative;
@@ -3110,7 +3049,6 @@ a[data-goto]:hover {
 .fc-row .fc-bg {
   z-index: 1;
 }
-
 
 /* highlighting cells & background event skeleton */
 
@@ -3138,12 +3076,6 @@ a[data-goto]:hover {
 .fc-row .fc-highlight-skeleton {
   z-index: 3;
 }
-
-
-/*
-row content (which contains day/week numbers and events) as well as "helper" (which contains
-temporary rendered events).
-*/
 
 .fc-row .fc-content-skeleton {
   position: relative;
@@ -3173,8 +3105,7 @@ temporary rendered events).
 }
 
 
-/* Scrolling Container
---------------------------------------------------------------------------------------------------*/
+/* Scrolling Container */
 
 .fc-scroller {
   -webkit-overflow-scrolling: touch;
@@ -3192,8 +3123,7 @@ temporary rendered events).
 }
 
 
-/* Global Event Styles
---------------------------------------------------------------------------------------------------*/
+/* Global Event Styles */
 
 .fc-event {
   position: relative;
@@ -3244,7 +3174,6 @@ temporary rendered events).
   background-color: #3a87ad;
   /* default BACKGROUND color */
 }
-
 
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
 
@@ -3320,8 +3249,7 @@ temporary rendered events).
 }
 
 
-/* Event Selection (only for touch devices)
---------------------------------------------------------------------------------------------------*/
+/* Event Selection (only for touch devices) */
 
 .fc-event.fc-selected {
   z-index: 9999 !important;
@@ -3334,9 +3262,7 @@ temporary rendered events).
 }
 
 
-/* Horizontal Events
---------------------------------------------------------------------------------------------------*/
-
+/* Horizontal Events */
 
 /* bigger touch area when selected */
 
@@ -3444,11 +3370,7 @@ temporary rendered events).
 }
 
 
-/* DayGrid events
-----------------------------------------------------------------------------------------------------
-We use the full "fc-day-grid-event" class instead of using descendants because the event won't
-be a descendant of the grid when it is being dragged.
-*/
+/* DayGrid events */
 
 .fc-day-grid-event {
   margin: 2px 5px 0;
@@ -3486,10 +3408,7 @@ tr:first-child > td > .fc-day-grid-event {
   font-weight: bold;
 }
 
-
 /* resizer (cursor devices) */
-
-
 /* left resizer  */
 
 .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer,
@@ -3500,17 +3419,13 @@ tr:first-child > td > .fc-day-grid-event {
 
 
 /* right resizer */
-
 .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer,
 .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer {
   margin-right: -2px;
   /* to the day cell's edge */
 }
 
-
-/* Event Limiting
---------------------------------------------------------------------------------------------------*/
-
+/* Event Limiting */
 
 /* "more" link that represents hidden events */
 
@@ -3548,8 +3463,7 @@ a.fc-more:hover {
 }
 
 
-/* Now Indicator
---------------------------------------------------------------------------------------------------*/
+/* Now Indicator */
 
 .fc-now-indicator {
   position: absolute;
@@ -3557,8 +3471,7 @@ a.fc-more:hover {
 }
 
 
-/* Utilities
---------------------------------------------------------------------------------------------------*/
+/* Utilities */
 
 .fc-unselectable {
   -webkit-user-select: none;
@@ -3571,8 +3484,7 @@ a.fc-more:hover {
 }
 
 
-/* Toolbar
---------------------------------------------------------------------------------------------------*/
+/* Toolbar */
 
 .fc-toolbar {
   text-align: center;
@@ -3591,7 +3503,6 @@ a.fc-more:hover {
   display: inline-block;
 }
 
-
 /* the things within each left/right/center section */
 
 .fc .fc-toolbar > * > * {
@@ -3600,9 +3511,7 @@ a.fc-more:hover {
   margin-left: .75em;
 }
 
-
 /* the first thing within each left/center/right section */
-
 .fc .fc-toolbar > * >:first-child {
   /* extra precedence to override button border margins */
   margin-left: 0;
@@ -3610,15 +3519,12 @@ a.fc-more:hover {
 
 
 /* title text */
-
 .fc-toolbar h2 {
   margin: 0;
   font-size: 1.8em;
 }
 
-
 /* button layering (for border precedence) */
-
 .fc-toolbar button {
   position: relative;
 }
@@ -3642,15 +3548,8 @@ a.fc-more:hover {
 }
 
 
-/* View Structure
---------------------------------------------------------------------------------------------------*/
-
-
+/* View Structure */
 /* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
-
-
-/* don't do this for the toolbar because we'll want bootstrap to style those buttons as some pt */
-
 .fc-view-container *,
 .fc-view-container *:before,
 .fc-view-container *:after {
@@ -3666,13 +3565,9 @@ a.fc-more:hover {
   z-index: 1;
 }
 
-
-/* BasicView
---------------------------------------------------------------------------------------------------*/
-
+/* BasicView */
 
 /* day row structure */
-
 .fc-basicWeek-view .fc-content-skeleton,
 .fc-basicDay-view .fc-content-skeleton {
   /* there may be week numbers in these views, so no padding-top */
@@ -3685,9 +3580,7 @@ a.fc-more:hover {
   /* ensure that all rows are at least this tall */
 }
 
-
 /* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
-
 .fc-row.fc-rigid {
   overflow: hidden;
 }
@@ -3699,9 +3592,7 @@ a.fc-more:hover {
   right: 0;
 }
 
-
 /* week and day number styling */
-
 .fc-day-top.fc-other-month {
   opacity: 0.3;
 }
@@ -3742,9 +3633,7 @@ a.fc-more:hover {
   color: #808080;
 }
 
-
 /* when week/day number have own column */
-
 .fc-basic-view td.fc-week-number {
   text-align: center;
 }
@@ -3756,9 +3645,7 @@ a.fc-more:hover {
 }
 
 
-/* AgendaView all-day area
---------------------------------------------------------------------------------------------------*/
-
+/* AgendaView all-day area */
 .fc-agenda-view .fc-day-grid {
   position: relative;
   z-index: 2;
@@ -3775,9 +3662,7 @@ a.fc-more:hover {
   /* give space underneath events for clicking/selecting days */
 }
 
-
-/* TimeGrid axis running down the side (for both the all-day area and the slot area)
---------------------------------------------------------------------------------------------------*/
+/* TimeGrid axis running down the side (for both the all-day area and the slot area) */
 
 .fc .fc-axis {
   /* .fc to overcome default cell styles */
@@ -3799,9 +3684,7 @@ a.fc-more:hover {
   /* overcome jqui theme making it bold */
 }
 
-
-/* TimeGrid Structure
---------------------------------------------------------------------------------------------------*/
+/* TimeGrid Structure */
 
 .fc-time-grid-container,
 .fc-time-grid {
@@ -3877,10 +3760,7 @@ a.fc-more:hover {
   z-index: 6;
 }
 
-
-/* TimeGrid Slats (lines that run horizontally)
---------------------------------------------------------------------------------------------------*/
-
+/* TimeGrid Slats (lines that run horizontally) */
 .fc-time-grid .fc-slats td {
   height: 1.5em;
   border-bottom: 0;
@@ -3897,10 +3777,7 @@ a.fc-more:hover {
   /* see through to fc-bg */
 }
 
-
-/* TimeGrid Highlighting Slots
---------------------------------------------------------------------------------------------------*/
-
+/* TimeGrid Highlighting Slots */
 .fc-time-grid .fc-highlight-container {
   /* a div within a cell within the fc-highlight-skeleton */
   position: relative;
@@ -3914,10 +3791,7 @@ a.fc-more:hover {
   /* top and bottom will be in by JS */
 }
 
-
-/* TimeGrid Event Containment
---------------------------------------------------------------------------------------------------*/
-
+/* TimeGrid Event Containment */
 .fc-ltr .fc-time-grid .fc-event-container {
   /* space on the sides of events for LTR (default) */
   margin: 0 2.5% 0 2px;
@@ -3941,9 +3815,7 @@ a.fc-more:hover {
   right: 0;
 }
 
-
-/* Generic Vertical Event
---------------------------------------------------------------------------------------------------*/
+/* Generic Vertical Event */
 
 .fc-v-event.fc-not-start {
   /* events that are continuing from another day */
@@ -3965,11 +3837,7 @@ a.fc-more:hover {
 }
 
 
-/* TimeGrid Event Styling
-----------------------------------------------------------------------------------------------------
-We use the full "fc-time-grid-event" class instead of using descendants because the event won't
-be a descendant of the grid when it is being dragged.
-*/
+/* TimeGrid Event Styling */
 
 .fc-time-grid-event {
   overflow: hidden;
@@ -4002,9 +3870,7 @@ be a descendant of the grid when it is being dragged.
   white-space: nowrap;
 }
 
-
 /* short mode, where time and title are on the same line */
-
 .fc-time-grid-event.fc-short .fc-content {
   /* don't wrap to second line (now that contents will be inline) */
   white-space: nowrap;
@@ -4079,8 +3945,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 
-/* Now Indicator
---------------------------------------------------------------------------------------------------*/
+/* Now Indicator */
 
 .fc-time-grid .fc-now-indicator-line {
   border-top-width: 1px;
@@ -4090,7 +3955,6 @@ be a descendant of the grid when it is being dragged.
 
 
 /* arrow on axis */
-
 .fc-time-grid .fc-now-indicator-arrow {
   margin-top: -5px;
   /* vertically center on top coordinate */
@@ -4113,12 +3977,10 @@ be a descendant of the grid when it is being dragged.
 }
 
 
-/* List View
---------------------------------------------------------------------------------------------------*/
+/* List View */
 
 
 /* possibly reusable */
-
 .fc-event-dot {
   display: inline-block;
   width: 10px;
@@ -4128,10 +3990,8 @@ be a descendant of the grid when it is being dragged.
 
 
 /* view wrapper */
-
 .fc-rtl .fc-list-view {
   direction: rtl;
-  /* unlike core views, leverage browser RTL */
 }
 
 .fc-list-view {
@@ -4144,7 +4004,6 @@ be a descendant of the grid when it is being dragged.
 
 .fc .fc-list-table {
   table-layout: auto;
-  /* for shrinkwrapping cell content */
 }
 
 .fc-list-table td {
@@ -4156,9 +4015,7 @@ be a descendant of the grid when it is being dragged.
   border-top-width: 0;
 }
 
-
 /* day headings with the list */
-
 .fc-list-heading {
   border-bottom-width: 1px;
 }
@@ -4183,12 +4040,9 @@ be a descendant of the grid when it is being dragged.
   float: left;
 }
 
-
 /* event list items */
-
 .fc-list-item.fc-has-url {
   cursor: pointer;
-  /* whole row will be clickable */
 }
 
 .fc-list-item:hover td {
@@ -4201,9 +4055,7 @@ be a descendant of the grid when it is being dragged.
   width: 1px;
 }
 
-
 /* make the dot closer to the event title */
-
 .fc-ltr .fc-list-item-marker {
   padding-right: 0;
 }
@@ -4213,19 +4065,15 @@ be a descendant of the grid when it is being dragged.
 }
 
 .fc-list-item-title a {
-  /* every event title cell has an <a> tag */
   text-decoration: none;
   color: inherit;
 }
 
 .fc-list-item-title a[href]:hover {
-  /* hover effect only on titles with hrefs */
   text-decoration: underline;
 }
 
-
 /* message when no events */
-
 .fc-list-empty-wrap2 {
   position: absolute;
   top: 0;
@@ -4247,7 +4095,6 @@ be a descendant of the grid when it is being dragged.
 }
 
 .fc-unthemed .fc-list-empty {
-  /* theme will provide own background */
   background-color: #eee;
 }
 
@@ -5619,13 +5466,7 @@ be a descendant of the grid when it is being dragged.
   left: 0;
 }
 
-
-/*!
- * Bootstrap-select v1.11.2 (http://silviomoreto.github.io/bootstrap-select)
- *
- * Copyright 2013-2016 bootstrap-select
- * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
- */
+/* Bootstrap-select v1.11.2 */
 
 select.bs-select-hidden,
 select.selectpicker {
@@ -8401,7 +8242,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 
-/*           Animations              */
+/* Animations */
 
 .animation-transition-general,
 .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a span,
@@ -10729,11 +10570,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-
-/*
- * bootstrap-tagsinput v0.8.0
- *
- */
+/* bootstrap-tagsinput v0.8.0 */
 
 .bootstrap-tagsinput {
   display: inline-block;
@@ -11350,7 +11187,8 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .modal-content .modal-body + .modal-footer {
-  padding-top: 0;
+      padding-top: 12px;
+    padding-bottom: 28px;
 }
 
 .modal-backdrop {
@@ -11358,7 +11196,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .modal .modal-dialog {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .modal .modal-header .close {
@@ -11387,7 +11225,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .modal-small {
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
 }
 
@@ -12378,10 +12216,10 @@ footer .btn {
 }
 
 .card .category:not([class*="text-"]) {
-    color: #6b6b6b;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
+  color: #6b6b6b;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .card .category a .material-icons {
@@ -12813,12 +12651,17 @@ footer .btn {
 
 .card-profile .card-avatar,
 .card-testimonial .card-avatar {
-  max-width: 130px;
-  max-height: 130px;
-  margin: -50px auto 0;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    padding: 19px;
+    max-width: 65px;
+    max-height: 65px;
+    margin: -40px auto 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    background-color: #1abfd3;
+    text-align: center;
 }
 
 .card-profile .card-avatar + .card-content,
@@ -13423,7 +13266,7 @@ footer .btn {
 }
 
 
-/*          Changes for small display      */
+/* Changes for small display */
 
 @media (max-width: 991px) {
   .form-group textarea {
@@ -14189,6 +14032,10 @@ footer .btn {
   margin-top: 10px
 }
 
+.mt-17 {
+  margin-top: 17px
+}
+
 .ml-25 {
   margin-left: 25px
 }
@@ -14222,28 +14069,32 @@ footer .btn {
 }
 
 .toolbar {
-    margin-top: -15px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid #ddd;
+  margin-top: -15px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #ddd;
 }
 
 .page-entry label {
-    font-weight: normal;
-    text-align: left;
-    white-space: nowrap;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .page-entry select {
-    width: 75px;
-    display: inline-block;
+  width: 75px;
+  display: inline-block;
 }
 
 .box-border {
-    border: 1px solid #dcdcdc;
-    padding: 15px;
+  border: 1px solid #dcdcdc;
+  padding: 15px;
 }
 
 .form-horizontal .label-on-left {
-    padding: 16px 5px 0 0;
-    text-align: right;
+  padding: 16px 5px 0 0;
+  text-align: right;
+}
+
+.text-white {
+  color: #fff!important;
 }
