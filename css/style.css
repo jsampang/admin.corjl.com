@@ -14098,3 +14098,79 @@ footer .btn {
 .text-white {
   color: #fff!important;
 }
+
+.form-control-custom {
+    display: block;
+    width: 100%;
+    padding: 11px 11px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin: 10px 0px;
+    height: 42px;
+      min-width: 200px;
+}
+
+.input-group-custom {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+  margin-bottom: 10px;
+}
+
+.input-group-btn-custom {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.btn-custom {
+    border: none;
+    border-radius: 0px;
+    position: relative;
+    padding: 11px 30px;
+    margin: 10px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.select-custom select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%20%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%20%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2214px%22%20height%3D%2212px%22%20viewBox%3D%220%200%2014%2012%22%20enable-background%3D%22new%200%200%2014%2012%22%20xml%3Aspace%3D%22preserve%22%3E%20%3Cpolygon%20points%3D%223.862%2C7.931%200%2C4.069%207.725%2C4.069%20%22/%3E%3C/svg%3E);
+}
+
+.btn-icon {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 11px 18px;
+    margin: 10px 0px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #5ac0de;
+    color: #fff;
+}
+
+div.inline {
+  display: inline-block;
+}

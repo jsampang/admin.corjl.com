@@ -225,12 +225,12 @@
                         </div>
                         <div class="dropdown">
                           <button type="button" class="btn btn-round btn-info dropdown-toggle" data-toggle="dropdown">
-                            <i class="material-icons">build</i>
+                            <i class="fas fa-edit"></i>
                             <span class="caret"></span>
                           </button>
                           <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                            <li><a href="#" data-toggle="modal" data-target="#modal-add-promo"><i class="material-icons">note_add</i> Add </a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#modal-edit-promo"><i class="material-icons">edit</i> Edit </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal-add-seller"><i class="material-icons">note_add</i> Add </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal-edit-seller"><i class="material-icons">edit</i> Edit </a></li>
                             <li class="divider"></li>
                             <li><a href="#" data-toggle="modal" data-target="#modal-delete-confirm"><i class="material-icons">delete_outline</i> Delete </a></li>
                           </ul>
@@ -381,7 +381,71 @@
                             <li><a href="javascript:void(0);">next </a></li>
                           </ul>
                         </div>
-                      </div>     
+                      </div>
+                     
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="input-group-custom">
+                              <input type="text" class="form-control-custom" placeholder="Search for...">
+                              <span class="input-group-btn-custom">
+                                <button class="btn-custom btn-info" type="button">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-md-offset-4 text-right">
+                            <div class="select-custom inline">
+                              <select class="form-control-custom">
+                                <option value="" disabled="" selected="">Status</option>
+                                <option value="">All</option>
+                                <option value="">Active</option>
+                                <option value="">Inactive</option>
+                              </select>
+                            </div>
+
+                            <div class="dropdown inline">
+                              <button class="btn-icon btn-secondary"><i class="fas fa-edit"></i></button>
+                            </div>
+
+                            <div class="dropdown inline">
+                              <button class="btn-icon btn-secondary"><i class="fas fa-plus"></i></button>
+                            </div>
+
+                            <div class="dropdown inline">
+                              <button class="btn-icon btn-secondary"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                             
+                      <div>
+                        <input type="text" class="form-control-custom" id="" placeholder="Name">
+                      </div>
+                    
+                      <div>
+                        <input type="date" class="form-control-custom" id="" placeholder="Blah">
+                      </div>
+
+                      <span class="select-custom">
+                          <select class="form-control-custom">
+                            <option value="" disabled="" selected="">Status</option>
+                            <option value="">All</option>
+                            <option value="">Active</option>
+                            <option value="">Inactive</option>
+                          </select>
+                      </span>
+                      <div class="input-group-custom">
+                        <input type="text" class="form-control-custom" placeholder="Search for...">
+                        <span class="input-group-btn-custom">
+                          <button class="btn-custom btn-info" type="button"><i class="fas fa-search"></i></button>
+                        </span>
+                      </div>
+                    
+
+                    
+                    
+                    
                   </div>
                 </div>
               </div>
@@ -395,8 +459,8 @@
     </div>
   </div>
   
-    <!-- Modal Add Promo-->
-    <div class="modal fade" id="modal-add-promo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal Add Seller -->
+    <!--<div class="modal fade" id="modal-add-promo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -564,10 +628,180 @@
                 </div>
             </div>
         </div>
+    </div>-->
+  
+    <!-- Modal Add Seller-->
+    <div class="modal fade" id="modal-add-seller" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="material-icons">clear</i>
+                    </button>
+                    <h4 class="modal-title">Add Seller</h4>
+                </div>
+                <div class="modal-body mr-25">
+                    <form class="form-horizontal">
+                      <div class="row">
+                            <label class="col-md-3 label-on-left">Username:</label>
+                            <div class="col-md-9">
+                                <div class="form-group label-floating">
+                                    <label class="control-label"></label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                      <div class="row">
+                          <label class="col-md-3 label-on-left">Email:</label>
+                          <div class="col-md-9">
+                            <div class="form-group label-floating">
+                              <label class="control-label"></label>
+                              <input type="text" class="form-control" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                      <div class="row">
+                          <label class="col-sm-3 label-on-left">First Name:</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="col-sm-5">
+                                <div class="form-group label-floating">
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                              </div>
+                              <div class="col-sm-2 text-center" style="padding: 0px !important">
+                                <label class="label-on-left">Last Name:</label>
+                              </div>
+                              <div class="col-sm-5">
+                                <div class="form-group label-floating">
+                                  <input type="text" class="form-control" placeholder="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="row">
+                          <label class="col-md-3 label-on-left">Password:</label>
+                          <div class="col-md-9">
+                            <div class="form-group label-floating">
+                              <label class="control-label"></label>
+                              <input type="text" class="form-control" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                      <div class="row">
+                            <label class="col-md-3 label-on-left">Eligible:</label>
+                            <div class="col-md-9">
+                                <div class="form-group label-floating">
+                                    <select name="" class="form-control">
+                                        <option value="" selected=""> Please Select</option>
+                                        <option value=""> Active </option>
+                                        <option value=""> Inactive </option>
+                                        <option value=""> Inactive No Payment</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                      <!--<div class="row">
+                          <label class="col-sm-3 label-on-left">Balance:</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <p class="mt-17">0.00</p>
+                              </div>
+                              <div class="col-sm-4 text-center" style="padding: 0px !important">
+                                <label class="label-on-left">Monthly:</label>
+                              </div>
+                              <div class="col-sm-4">
+                                <p class="mt-17">49.99</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="row">
+                          <label class="col-sm-3 label-on-left">Free Days:</label>
+                          <div class="col-sm-9">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <p class="mt-17">7</p>
+                              </div>
+                              <div class="col-sm-4 text-center" style="padding: 0px !important">
+                                <label class="label-on-left">Per Order:</label>
+                              </div>
+                              <div class="col-sm-4">
+                                <p class="mt-17">0.30</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>-->
+                      <div class="row">
+                        <label class="col-md-3 label-on-left">Apply Promo:</label>
+                        <div class="col-md-9">
+                          <div class="form-group label-floating">
+                            <label class="control-label"></label>
+                            <input type="text" class="form-control" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      <!--<div class="row">
+                        <label class="col-md-3 label-on-left">Active Promos:</label>
+                        <div class="col-md-19">
+                           <p class="mt-17">None</p>
+                        </div>
+                      </div>-->
+                      <div class="row">
+                            <label class="col-md-3 label-on-left">Subscription Plan:</label>
+                            <div class="col-md-9">
+                                <div class="form-group label-floating">
+                                    <select name="" class="form-control">
+                                        <option value="" selected=""> Please Select</option>
+                                        <option value="">$19 Monthly Fee, $0.79 Per Order Fee</option>
+                                        <option value="">$29 Monthly Fee, $0.79 Per Order Fee</option>
+                                        <option value="">$39 Monthly Fee, $0.79 Per Order Fee</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="row">
+                        <label class="col-md-3 label-on-left">Custom Logo Shop:</label>
+                        <div class="col-md-9">
+                          <div class="form-group label-floating">
+                            <span class="btn btn-default btn-round btn-file">Upload Image
+                              <input type="file" name="...">           
+                          </span>
+                          </div>
+                        </div>
+                      </div> 
+                      <!--<div class="text-center ml-25">
+                        <button type="button" class="btn btn-raised btn-info mr-1">View Log
+                          <div class="ripple-container"></div>
+                        </button>
+                        <button type="button" class="btn btn-raised btn-info mr-1">Login As Seller
+                          <div class="ripple-container"></div>
+                        </button>
+                        <button type="button" class="btn btn-raised btn-info mr-1">Billing History
+                          <div class="ripple-container"></div>
+                        </button>
+                        <button type="button" class="btn btn-raised btn-info mr-1">Etsy Items
+                          <div class="ripple-container"></div>
+                        </button>
+                      </div>-->
+                    </form>
+                </div>
+                <div class="modal-footer mr-25">
+                    <button class="btn btn-raised btn-default" data-dismiss="modal">Cancel
+                        <div class="ripple-container"></div>
+                    </button>
+                    <button class="btn btn-raised btn-info">Save
+                        <div class="ripple-container"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <!-- Modal Edit Promo-->
-    <div class="modal fade" id="modal-edit-promo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal Edit Seller-->
+    <div class="modal fade" id="modal-edit-seller" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -600,15 +834,15 @@
                           <label class="col-sm-3 label-on-left">First Name:</label>
                           <div class="col-sm-9">
                             <div class="row">
-                              <div class="col-sm-4">
+                              <div class="col-sm-5">
                                 <div class="form-group label-floating">
                                   <input type="text" class="form-control" placeholder="Mary">
                                 </div>
                               </div>
-                              <div class="col-sm-4 text-center" style="padding: 0px !important">
+                              <div class="col-sm-2 text-center" style="padding: 0px !important">
                                 <label class="label-on-left">Last Name:</label>
                               </div>
-                              <div class="col-sm-4">
+                              <div class="col-sm-5">
                                 <div class="form-group label-floating">
                                   <input type="text" class="form-control" placeholder="Signer">
                                 </div>
@@ -641,13 +875,13 @@
                           <label class="col-sm-3 label-on-left">Balance:</label>
                           <div class="col-sm-9">
                             <div class="row">
-                              <div class="col-sm-4">
+                              <div class="col-sm-5">
                                 <p class="mt-17">0.00</p>
                               </div>
-                              <div class="col-sm-4 text-center" style="padding: 0px !important">
+                              <div class="col-sm-2 text-center" style="padding: 0px !important">
                                 <label class="label-on-left">Monthly:</label>
                               </div>
-                              <div class="col-sm-4">
+                              <div class="col-sm-5">
                                 <p class="mt-17">49.99</p>
                               </div>
                             </div>
@@ -657,13 +891,13 @@
                           <label class="col-sm-3 label-on-left">Free Days:</label>
                           <div class="col-sm-9">
                             <div class="row">
-                              <div class="col-sm-4">
+                              <div class="col-sm-5">
                                 <p class="mt-17">7</p>
                               </div>
-                              <div class="col-sm-4 text-center" style="padding: 0px !important">
+                              <div class="col-sm-2 text-center" style="padding: 0px !important">
                                 <label class="label-on-left">Per Order:</label>
                               </div>
-                              <div class="col-sm-4">
+                              <div class="col-sm-5">
                                 <p class="mt-17">0.30</p>
                               </div>
                             </div>
@@ -680,7 +914,7 @@
                       </div>
                       <div class="row">
                         <label class="col-md-3 label-on-left">Active Promos:</label>
-                        <div class="col-md-19">
+                        <div class="col-md-9">
                            <p class="mt-17">None</p>
                         </div>
                       </div>
@@ -700,148 +934,33 @@
                         <label class="col-md-3 label-on-left">Custom Logo Shop:</label>
                         <div class="col-md-9">
                           <div class="form-group label-floating">
-                            <span class="btn btn-rose btn-round btn-file">Upload Image
-                          <input type="hidden">
-                          <input type="file" name="...">
-                          <div class="ripple-container"></div>
+                            <span class="btn btn-default btn-round btn-file">Upload Image
+                              <input type="file" name="...">           
                           </span>
                           </div>
                         </div>
-                      </div>
-
-                      
-                      
-                      
-                      
-                      
-                      <!--
-                        <div class="row">
-                            <label class="col-sm-2 label-on-left">Offer:</label>
-                            <div class="col-sm-10">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group label-floating">
-                                            <select name="" class="form-control">
-                                                <option value="" selected=""> Monthly Fee </option>
-                                                <option value=""> Per Order Fee </option>
-                                                <option value=""> Add Trail Days </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group label-floating">
-                                            <label class="control-label"></label>
-                                            <input type="text" class="form-control" placeholder="7.15">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label class="col-sm-2 label-on-left">&nbsp;</label>
-                            <div class="col-sm-10">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group label-floating">
-                                            <select name="" class="form-control">
-                                                <option disabled="" selected="">Please Select</option>
-                                                <option value=""> Monthly Fee </option>
-                                                <option value=""> Per Order Fee </option>
-                                                <option value=""> Add Trail Days </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group label-floating">
-                                            <label class="control-label"></label>
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label class="col-sm-2 label-on-left">Quantity:</label>
-                            <div class="col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <div class="form-group label-floating">
-                                            <label class="control-label"></label>
-                                            <input type="text" class="form-control" placeholder="1">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 text-center" style="padding: 0px !important">
-                                        <label class="label-on-left">Offer Duration:</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group label-floating">
-                                            <select name="" class="form-control">
-                                                <option value="" selected=""> One Time </option>
-                                                <option value=""> 1 Day </option>
-                                                <option value=""> 2 Day</option>
-                                                <option value=""> 3 Day </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <label class="col-sm-2 label-on-left">Starts:</label>
-                            <div class="col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="form-group label-floating">
-                                            <input type="text" class="form-control datepicker" value="10/05/2016">
-                                            <span class="material-input"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 text-center" style="padding: 0px !important">
-                                        <label class="label-on-left">Expires:</label>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group label-floating">
-                                            <input type="text" class="form-control datepicker" value="10/05/2016">
-                                            <span class="material-input"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label class="col-sm-2 label-on-left">Single Use:</label>
-                            <div class="col-sm-10">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="form-group label-floating">
-                                            <select name="" class="form-control">
-                                                <option value="" selected=""> Yes </option>
-                                                <option value=""> No </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 text-center" style="padding: 0px !important">
-                                        <label class="label-on-left">Status:</label>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group label-floating">
-                                            <select name="" class="form-control">
-                                                <option value="" selected=""> Active </option>
-                                                <option value=""> Inactive</option>>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
+                      </div> 
+                      <div class="text-center ml-25">
+                        <button type="button" class="btn btn-raised btn-info mr-1">View Log
+                          <div class="ripple-container"></div>
+                        </button>
+                        <button type="button" class="btn btn-raised btn-info mr-1">Login As Seller
+                          <div class="ripple-container"></div>
+                        </button>
+                        <button type="button" class="btn btn-raised btn-info mr-1">Billing History
+                          <div class="ripple-container"></div>
+                        </button>
+                        <button type="button" class="btn btn-raised btn-info mr-1">Etsy Items
+                          <div class="ripple-container"></div>
+                        </button>
+                      </div> 
                     </form>
                 </div>
                 <div class="modal-footer mr-25">
-                    <button class="btn btn-raised btn-round btn-default" data-dismiss="modal">Cancel
+                    <button class="btn btn-raised btn-default" data-dismiss="modal">Cancel
                         <div class="ripple-container"></div>
                     </button>
-                    <button class="btn btn-raised btn-round btn-info">Save
+                    <button class="btn btn-raised btn-info">Save
                         <div class="ripple-container"></div>
                     </button>
                 </div>
