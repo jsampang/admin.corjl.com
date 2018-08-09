@@ -2523,7 +2523,6 @@ svg {
   z-index: 1;
 }
 
-
 /* FullCalendar v3.0.1 Stylesheet */
 
 .fc {
@@ -2538,7 +2537,6 @@ svg {
 body .fc {
   font-size: 1em;
 }
-
 
 /* Colors */
 
@@ -2818,7 +2816,6 @@ fieldset[disabled] .fc button.btn-primary.active {
 	border-bottom-right-radius: 4px;
 }*/
 
-
 /* icons in buttons */
 
 .fc button .fc-icon {
@@ -2829,7 +2826,6 @@ fieldset[disabled] .fc button.btn-primary.active {
   margin: 0 .2em;
   vertical-align: middle;
 }
-
 
 /* button states borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/) */
 
@@ -2871,6 +2867,7 @@ fieldset[disabled] .fc button.btn-primary.active {
 .fc-button-group {
   display: inline-block;
 }
+
 
 .fc .fc-button-group > * {
   /* extra precedence b/c buttons have margin set to zero */
@@ -3053,7 +3050,6 @@ a[data-goto]:hover {
   z-index: 1;
 }
 
-
 /* highlighting cells & background event skeleton */
 
 .fc-row .fc-bgevent-skeleton,
@@ -3179,7 +3175,6 @@ a[data-goto]:hover {
   /* default BACKGROUND color */
 }
 
-
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
 
 .fc-event,
@@ -3268,7 +3263,6 @@ a[data-goto]:hover {
 
 
 /* Horizontal Events */
-
 
 /* bigger touch area when selected */
 
@@ -3414,10 +3408,7 @@ tr:first-child > td > .fc-day-grid-event {
   font-weight: bold;
 }
 
-
 /* resizer (cursor devices) */
-
-
 /* left resizer  */
 
 .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer,
@@ -3428,16 +3419,13 @@ tr:first-child > td > .fc-day-grid-event {
 
 
 /* right resizer */
-
 .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer,
 .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer {
   margin-right: -2px;
   /* to the day cell's edge */
 }
 
-
 /* Event Limiting */
-
 
 /* "more" link that represents hidden events */
 
@@ -3515,7 +3503,6 @@ a.fc-more:hover {
   display: inline-block;
 }
 
-
 /* the things within each left/right/center section */
 
 .fc .fc-toolbar > * > * {
@@ -3524,9 +3511,7 @@ a.fc-more:hover {
   margin-left: .75em;
 }
 
-
 /* the first thing within each left/center/right section */
-
 .fc .fc-toolbar > * >:first-child {
   /* extra precedence to override button border margins */
   margin-left: 0;
@@ -3534,15 +3519,12 @@ a.fc-more:hover {
 
 
 /* title text */
-
 .fc-toolbar h2 {
   margin: 0;
   font-size: 1.8em;
 }
 
-
 /* button layering (for border precedence) */
-
 .fc-toolbar button {
   position: relative;
 }
@@ -3567,10 +3549,7 @@ a.fc-more:hover {
 
 
 /* View Structure */
-
-
 /* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
-
 .fc-view-container *,
 .fc-view-container *:before,
 .fc-view-container *:after {
@@ -3586,12 +3565,9 @@ a.fc-more:hover {
   z-index: 1;
 }
 
-
 /* BasicView */
 
-
 /* day row structure */
-
 .fc-basicWeek-view .fc-content-skeleton,
 .fc-basicDay-view .fc-content-skeleton {
   /* there may be week numbers in these views, so no padding-top */
@@ -3604,9 +3580,7 @@ a.fc-more:hover {
   /* ensure that all rows are at least this tall */
 }
 
-
 /* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
-
 .fc-row.fc-rigid {
   overflow: hidden;
 }
@@ -3618,9 +3592,7 @@ a.fc-more:hover {
   right: 0;
 }
 
-
 /* week and day number styling */
-
 .fc-day-top.fc-other-month {
   opacity: 0.3;
 }
@@ -3661,9 +3633,7 @@ a.fc-more:hover {
   color: #808080;
 }
 
-
 /* when week/day number have own column */
-
 .fc-basic-view td.fc-week-number {
   text-align: center;
 }
@@ -3676,7 +3646,6 @@ a.fc-more:hover {
 
 
 /* AgendaView all-day area */
-
 .fc-agenda-view .fc-day-grid {
   position: relative;
   z-index: 2;
@@ -3692,7 +3661,6 @@ a.fc-more:hover {
   padding-bottom: 1em;
   /* give space underneath events for clicking/selecting days */
 }
-
 
 /* TimeGrid axis running down the side (for both the all-day area and the slot area) */
 
@@ -3715,7 +3683,6 @@ a.fc-more:hover {
   font-weight: normal;
   /* overcome jqui theme making it bold */
 }
-
 
 /* TimeGrid Structure */
 
@@ -3793,9 +3760,7 @@ a.fc-more:hover {
   z-index: 6;
 }
 
-
 /* TimeGrid Slats (lines that run horizontally) */
-
 .fc-time-grid .fc-slats td {
   height: 1.5em;
   border-bottom: 0;
@@ -3812,9 +3777,7 @@ a.fc-more:hover {
   /* see through to fc-bg */
 }
 
-
 /* TimeGrid Highlighting Slots */
-
 .fc-time-grid .fc-highlight-container {
   /* a div within a cell within the fc-highlight-skeleton */
   position: relative;
@@ -3828,9 +3791,7 @@ a.fc-more:hover {
   /* top and bottom will be in by JS */
 }
 
-
 /* TimeGrid Event Containment */
-
 .fc-ltr .fc-time-grid .fc-event-container {
   /* space on the sides of events for LTR (default) */
   margin: 0 2.5% 0 2px;
@@ -3853,7 +3814,6 @@ a.fc-more:hover {
   left: 0;
   right: 0;
 }
-
 
 /* Generic Vertical Event */
 
@@ -3910,9 +3870,7 @@ a.fc-more:hover {
   white-space: nowrap;
 }
 
-
 /* short mode, where time and title are on the same line */
-
 .fc-time-grid-event.fc-short .fc-content {
   /* don't wrap to second line (now that contents will be inline) */
   white-space: nowrap;
@@ -3997,7 +3955,6 @@ a.fc-more:hover {
 
 
 /* arrow on axis */
-
 .fc-time-grid .fc-now-indicator-arrow {
   margin-top: -5px;
   /* vertically center on top coordinate */
@@ -4024,7 +3981,6 @@ a.fc-more:hover {
 
 
 /* possibly reusable */
-
 .fc-event-dot {
   display: inline-block;
   width: 10px;
@@ -4034,7 +3990,6 @@ a.fc-more:hover {
 
 
 /* view wrapper */
-
 .fc-rtl .fc-list-view {
   direction: rtl;
 }
@@ -4060,9 +4015,7 @@ a.fc-more:hover {
   border-top-width: 0;
 }
 
-
 /* day headings with the list */
-
 .fc-list-heading {
   border-bottom-width: 1px;
 }
@@ -4087,9 +4040,7 @@ a.fc-more:hover {
   float: left;
 }
 
-
 /* event list items */
-
 .fc-list-item.fc-has-url {
   cursor: pointer;
 }
@@ -4104,9 +4055,7 @@ a.fc-more:hover {
   width: 1px;
 }
 
-
 /* make the dot closer to the event title */
-
 .fc-ltr .fc-list-item-marker {
   padding-right: 0;
 }
@@ -4124,9 +4073,7 @@ a.fc-more:hover {
   text-decoration: underline;
 }
 
-
 /* message when no events */
-
 .fc-list-empty-wrap2 {
   position: absolute;
   top: 0;
@@ -5518,7 +5465,6 @@ a.fc-more:hover {
   top: 0;
   left: 0;
 }
-
 
 /* Bootstrap-select v1.11.2 */
 
@@ -10624,7 +10570,6 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-
 /* bootstrap-tagsinput v0.8.0 */
 
 .bootstrap-tagsinput {
@@ -11242,8 +11187,8 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .modal-content .modal-body + .modal-footer {
-  padding-top: 12px;
-  padding-bottom: 28px;
+      padding-top: 12px;
+    padding-bottom: 28px;
 }
 
 .modal-backdrop {
@@ -12706,17 +12651,17 @@ footer .btn {
 
 .card-profile .card-avatar,
 .card-testimonial .card-avatar {
-  padding: 19px;
-  max-width: 65px;
-  max-height: 65px;
-  margin: -40px auto 0;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  background-color: #1abfd3;
-  text-align: center;
+    padding: 19px;
+    max-width: 65px;
+    max-height: 65px;
+    margin: -40px auto 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    background-color: #1abfd3;
+    text-align: center;
 }
 
 .card-profile .card-avatar + .card-content,
@@ -14152,148 +14097,4 @@ footer .btn {
 
 .text-white {
   color: #fff!important;
-}
-
-.card-content .card-title {
-  font-weight: bold;
-}
-
-/* Designers Options do not include on RADP */
-
-.form-control-custom {
-  display: block;
-  width: 100%;
-  padding: 11px 11px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0px;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  margin: 10px 0px;
-  height: 42px;
-  min-width: 200px;
-}
-
-.form-control-custom-rounded {
-  border-radius: 21px
-}
-
-.form-control-custom-rounded-group {
-  border-top-left-radius: 21px;
-  border-bottom-left-radius: 21px;
-}
-
-.input-group-custom {
-  position: relative;
-  display: table;
-  border-collapse: separate;
-  margin-bottom: 10px;
-}
-
-.input-group-btn-custom {
-  position: relative;
-  font-size: 0;
-  white-space: nowrap;
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle;
-  display: table-cell;
-}
-
-.btn-custom {
-  border: none;
-  border-radius: 0px;
-  position: relative;
-  padding: 11px 30px;
-  margin: 10px 0px;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  will-change: box-shadow, transform;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-custom-rounded {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.select-custom select {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-  background-position: 99% 50%;
-  background-repeat: no-repeat;
-  background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%20%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%20%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2214px%22%20height%3D%2212px%22%20viewBox%3D%220%200%2014%2012%22%20enable-background%3D%22new%200%200%2014%2012%22%20xml%3Aspace%3D%22preserve%22%3E%20%3Cpolygon%20points%3D%223.862%2C7.931%200%2C4.069%207.725%2C4.069%20%22/%3E%3C/svg%3E);
-}
-
-.select-custom-rounded select {
-  border-radius: 21px
-}
-
-.btn-icon {
-  border: none;
-  border-radius: 20px;
-  position: relative;
-  margin: 0px 0px;
-  font-size: 13px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  will-change: box-shadow, transform;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #5ac0de;
-  color: #fff;
-  height: 41px;
-  width: 41px;
-  top: -3px;
-}
-
-div.inline {
-  display: inline-block;
-}
-
-.btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 15px;
-}
-
-.btn-circle.btn-lg {
-  width: 50px;
-  height: 50px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 25px;
-}
-
-.btn-circle.btn-md {
-  width: 40px;
-  height: 40px;
-  padding: 11px 0px;
-  font-size: 13px;
-  line-height: 1.33;
-  border-radius: 20px;
-  margin: 0px 0px 5px 2px;
-}
-
-.btn-circle.btn-xl {
-  width: 70px;
-  height: 70px;
-  padding: 10px 16px;
-  font-size: 24px;
-  line-height: 1.33;
-  border-radius: 35px;
-}
-
-.card-content .card-title {
-  font-weight: bold;
 }

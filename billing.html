@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Corjl.com | Admin</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" >
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CMaterial+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Left Navigation -->
+    <div class="sidebar" data-active-color="blue" data-background-color="black" data-image="img/sidebar.jpg">
+      <div class="logo">
+        <a href="#" class="simple-text logo-mini"></a>
+        <a href="#" class="simple-text logo-normal"><img src="img/corjl-logo.png" alt="Corjl.com"></a>
+      </div>
+      <div class="sidebar-wrapper">
+        <div class="user">
+          <div class="photo">
+            <img src="https://cdn.ulsinc.com/avatars/50x50_I6ImtDMVJHUnE5OX.png" />
+          </div>
+          <div class="info">
+            <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+              <span>Joven Sampang<b class="caret"></b></span>
+            </a>
+            <div class="clearfix"></div>
+            <div class="collapse" id="collapseExample">
+              <ul class="nav">
+                <li>
+                  <a href="#">
+                    <span class="sidebar-mini"> <i class="material-icons">account_box</i></span>
+                    <span class="sidebar-normal"> My Profile </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-mini"><i class="material-icons">border_color</i></span>
+                    <span class="sidebar-normal"> Edit Profile </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-mini"><i class="material-icons">settings</i></span>
+                    <span class="sidebar-normal"> Settings </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="nav primary-nav">
+          <li>
+            <a href="index.html">
+              <i class="material-icons">dashboard</i>
+              <p> Dashboard </p>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="collapse" href="#pagesExamples">
+              <i class="material-icons">perm_identity</i>
+              <p> User Managements
+                <b class="caret"></b>
+              </p>
+            </a>
+            <div class="collapse" id="pagesExamples">
+              <ul class="nav">
+                <li>
+                  <a href="admin.html">
+                    <span class="sidebar-mini">&nbsp;</span>
+                    <span class="sidebar-normal"> Admin </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="sellers.html">
+                    <span class="sidebar-mini">&nbsp;</span>
+                    <span class="sidebar-normal"> Seller </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="customer.html">
+                    <span class="sidebar-mini">&nbsp;</span>
+                    <span class="sidebar-normal"> Customer </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="affiliate.html">
+                    <span class="sidebar-mini">&nbsp;</span>
+                    <span class="sidebar-normal"> Affiliate </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="billing.html">
+              <i class="material-icons">monetization_on</i>
+              <p> Billing </p>
+            </a>
+          </li>
+          <li>
+            <a href="reports.html">
+              <i class="material-icons">assignment</i>
+              <p> Reports </p>
+            </a>
+          </li>               
+          <li>
+            <a href="promo.html">
+              <i class="material-icons">local_offer</i>
+              <p> Promo Codes </p>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="material-icons">shopping_basket</i>
+              <p> Plans </p>
+            </a>
+          </li>     
+          <li>
+            <a href="ticketing.html">
+              <i class="material-icons">receipt</i>
+              <p> Ticketing </p>
+            </a>
+          </li>
+          <li>
+            <a href="fonts.html">
+              <i class="material-icons">format_color_text</i>
+              <p> Fonts </p>
+            </a>
+          </li>
+          <li>
+            <a href="activity-log.html">
+              <i class="material-icons">access_time</i>
+              <p> Activity Log </p>
+            </a>
+          </li>
+        </ul>
+      </div>   
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-panel">
+      <!-- Top Nav -->
+      <nav class="navbar navbar-transparent navbar-absolute">
+        <div class="container-fluid">
+          <div class="navbar-minimize">
+            <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+              <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+              <i class="material-icons visible-on-sidebar-mini">view_list</i>
+            </button>
+          </div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand"> Admin Panel </span>
+          </div>
+          <div class="collapse navbar-collapse">
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group form-search is-empty">
+                <input type="text" class="form-control" placeholder=" Search ">
+                <span class="material-input"></span>
+              </div>
+              <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                <i class="material-icons">search</i>
+                <div class="ripple-container"></div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Content -->
+      <div class="content">
+          <div class="container-fluid">  
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-icon" data-background-color="red">
+                    <i class="fas fa-dollar-sign fa-2x"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4 class="card-title">Billings</h4>
+                    <!-- Toolbar -->
+                    <div class="toolbar">      
+                      <div class="form-toolbar">
+                        <div>
+                        <form class="navbar-form navbar-right" role="search">
+                          <div class="form-group form-search is-empty">
+                            <input type="text" class="form-control" placeholder=" Search ">
+                            <span class="material-input"></span>
+                          </div>
+                          <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                            <i class="material-icons">search</i>
+                            <div class="ripple-container"></div>
+                          </button>
+                        </form>
+                        </div>
+                        <div>
+                          <input type="text" class="form-control datepicker" value="" placeholder="Date Range" />
+                        </div>
+                        <div>
+                          <select name="" class="form-control" title="Status">
+                            <option disabled="" selected="">Status</option>
+                            <option value=""> All</option>
+                            <option value=""> Active</option>
+                            <option value=""> Inactive </option>
+                            <option value=""> Inactive No Payment </option>
+                          </select>
+                        </div>
+<!--
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-round btn-info dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-edit"></i>
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="#" data-toggle="modal" data-target="#modal-add-promo"><i class="material-icons">note_add</i> Add </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal-edit-promo"><i class="material-icons">edit</i> Edit </a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modal-delete-confirm"><i class="material-icons">delete_outline</i> Delete </a></li>
+                          </ul>
+                        </div>        
+-->
+                      </div>
+                      
+                    </div>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </th>
+                            <th>Date</th>
+                            <th>Seller</th>
+                            <th>Monthly Fee</th>
+                            <th># Order</th>
+                            <th>Subtotal</th>
+                            <th>Adjustment</th>
+                            <th>Total</th>
+                            <th>Payment Method</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item 1 -->
+                          <tr>
+                            <td>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </td>
+                            <td>07/24/2018</td>
+                            <td>AllPrintableShop</td>
+                            <td>$9.99</td>
+                            <td>10</td>
+                            <td>$12.99</td>
+                            <td>0.00</td>
+                            <td>$35.99</td>
+                            <td>***1234</td>
+                            <td><span class="label label-default">Unpaid</span></td>
+                          </tr>
+                          <!-- Item 1 -->
+                          <tr>
+                            <td>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </td>
+                            <td>07/24/2018</td>
+                            <td>AwesomeStore</td>
+                            <td>$9.99</td>
+                            <td>10</td>
+                            <td>$29.99</td>
+                            <td>0.00</td>
+                            <td>$56.99</td>
+                            <td>***5678</td>
+                            <td><span class="label label-success">Paid</span></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Footer -->
+                    <div class="form-toolbar mt-25">
+                          <div class="page-entry">
+                            <label class="form-group">Show
+                              <select class="form-control">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="-1">All</option>
+                              </select> Entries
+                            </label>
+                          </div>                           
+                        <div>
+                          <ul class="pagination pagination-info">
+                            <li><a href="javascript:void(0);"> prev</a></li>
+                            <li><a href="javascript:void(0);">1</a></li>
+                            <li><a href="javascript:void(0);">2</a></li>
+                            <li class="active"><a href="javascript:void(0);">3</a></li>
+                            <li><a href="javascript:void(0);">4</a></li>
+                            <li><a href="javascript:void(0);">5</a></li>
+                            <li><a href="javascript:void(0);">next </a></li>
+                          </ul>
+                        </div>
+                      </div>     
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+    </div>
+    <div style="visibility: hidden;">
+      <div id="sliderRegular"></div>
+      <div id="sliderDouble"></div>
+    </div>
+  </div>
+  
+    <!-- Modal Add Promo-->
+    <div class="modal fade" id="modal-add-promo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="material-icons">clear</i>
+                    </button>
+                    <h4 class="modal-title">Add Promo Code</h4>
+                </div>
+                <div class="modal-body mr-25">
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <label class="col-md-2 label-on-left">Code:</label>
+                            <div class="col-md-10">
+                                <div class="form-group label-floating">
+                                    <label class="control-label"></label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Offer:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option disabled="" selected=""></option>
+                                                <option value=""> Monthly Fee </option>
+                                                <option value=""> Per Order Fee </option>
+                                                <option value=""> Add Trail Days </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"></label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">&nbsp;</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option disabled="" selected=""></option>
+                                                <option value=""> Monthly Fee </option>
+                                                <option value=""> Per Order Fee </option>
+                                                <option value=""> Add Trail Days </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"></label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Quantity:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"></label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 text-center" style="padding: 0px !important">
+                                        <label class="label-on-left">Offer Duration:</label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option disabled="" selected=""></option>
+                                                <option value=""> One Time </option>
+                                                <option value=""> 1 Day </option>
+                                                <option value=""> 2 Day</option>
+                                                <option value=""> 3 Day </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2 label-on-left">Eligible:</label>
+                            <div class="col-md-10">
+                                <div class="form-group label-floating">
+                                    <select name="" class="form-control">
+                                        <option disabled="" selected=""></option>
+                                        <option value=""> All </option>
+                                        <option value=""> New Register </option>
+                                        <option value=""> Single Seller</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Starts:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <input type="text" class="form-control datepicker" value="">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 text-center" style="padding: 0px !important">
+                                        <label class="label-on-left">Expires:</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <input type="text" class="form-control datepicker" value="">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Single Use:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option disabled="" selected=""></option>
+                                                <option value=""> Yes </option>
+                                                <option value=""> No </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 text-center" style="padding: 0px !important">
+                                        <label class="label-on-left">Status:</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option disabled="" selected=""></option>
+                                                <option value=""> Active </option>
+                                                <option value=""> Inactive</option>>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer mr-25">
+                    <button class="btn btn-raised btn-default" data-dismiss="modal">Cancel
+                        <div class="ripple-container"></div>
+                    </button>
+                    <button class="btn btn-raised btn-info">Save
+                        <div class="ripple-container"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Edit Promo-->
+    <div class="modal fade" id="modal-edit-promo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="material-icons">clear</i>
+                    </button>
+                    <h4 class="modal-title">Edit Promo Code</h4>
+                </div>
+                <div class="modal-body mr-25">
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <label class="col-md-2 label-on-left">Code:</label>
+                            <div class="col-md-10">
+                                <div class="form-group label-floating">
+                                    <label class="control-label"></label>
+                                    <input type="text" class="form-control" placeholder="MS_START_2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Offer:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option value="" selected=""> Monthly Fee </option>
+                                                <option value=""> Per Order Fee </option>
+                                                <option value=""> Add Trail Days </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"></label>
+                                            <input type="text" class="form-control" placeholder="7.15">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">&nbsp;</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option disabled="" selected="">Please Select</option>
+                                                <option value=""> Monthly Fee </option>
+                                                <option value=""> Per Order Fee </option>
+                                                <option value=""> Add Trail Days </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"></label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Quantity:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group label-floating">
+                                            <label class="control-label"></label>
+                                            <input type="text" class="form-control" placeholder="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 text-center" style="padding: 0px !important">
+                                        <label class="label-on-left">Offer Duration:</label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option value="" selected=""> One Time </option>
+                                                <option value=""> 1 Day </option>
+                                                <option value=""> 2 Day</option>
+                                                <option value=""> 3 Day </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2 label-on-left">Eligible:</label>
+                            <div class="col-md-10">
+                                <div class="form-group label-floating">
+                                    <select name="" class="form-control">
+                                        <option value="" selected=""> All </option>
+                                        <option value=""> New Register </option>
+                                        <option value=""> Single Seller</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Starts:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <input type="text" class="form-control datepicker" value="10/05/2016">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 text-center" style="padding: 0px !important">
+                                        <label class="label-on-left">Expires:</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <input type="text" class="form-control datepicker" value="10/05/2016">
+                                            <span class="material-input"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-sm-2 label-on-left">Single Use:</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option value="" selected=""> Yes </option>
+                                                <option value=""> No </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 text-center" style="padding: 0px !important">
+                                        <label class="label-on-left">Status:</label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group label-floating">
+                                            <select name="" class="form-control">
+                                                <option value="" selected=""> Active </option>
+                                                <option value=""> Inactive</option>>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer mr-25">
+                    <button class="btn btn-raised btn-default" data-dismiss="modal">Cancel
+                        <div class="ripple-container"></div>
+                    </button>
+                    <button class="btn btn-raised btn-info">Save
+                        <div class="ripple-container"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Delelet Confirm -->
+    <div class="modal fade" id="modal-delete-confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-small ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                    <h4 class="modal-title">Confirm Delete</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Are you sure you want to delete this? </h5>
+                </div>
+                <div class="modal-footer mt-25 text-center">
+                    <button class="btn btn-raised btn-default" data-dismiss="modal">Cancel
+                        <div class="ripple-container"></div>
+                    </button>
+                    <button class="btn btn-raised btn-info">Delete
+                        <div class="ripple-container"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+<!-- Core JS Files -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/material.min.js" type="text/javascript"></script>
+<script src="js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+
+<!-- Material Dashboard -->
+<script src="js/material-dashboard.js"></script>
+<script src="js/user-custom.js"></script>
+  
+<!-- Plugin -->
+<script src="js/plugin/jquery.datatables.js"></script>  
+<script src="js/plugin/jquery.select-bootstrap.js"></script>
+<script src="js/plugin/moment.min.js"></script>
+<script src="js/plugin/bootstrap-datetimepicker.js"></script>
+<script src="js/plugin/nouislider.min.js"></script>
+  
+</html>

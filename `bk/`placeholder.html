@@ -1,60 +1,148 @@
-<span class="btn btn-rose btn-round btn-file">
-<input type="hidden">
-<input type="file" name="...">
-<div class="ripple-container"></div>
-</span>
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="fas fa-dollar-sign fa-2x"></i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Billings</h4>
+            <# Toolbar #>
+            <div class="toolbar">
+              <div class="form-toolbar">
+                <div>
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group form-search is-empty">
+                      <input type="text" class="form-control" placeholder=" Search ">
+                      <span class="material-input"></span>
+                    </div>
+                    <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                      <i class="material-icons">search</i>
+                      <div class="ripple-container"></div>
+                    </button>
+                  </form>
+                </div>
+                <div>
+                  <input type="text" class="form-control datepicker" value="" placeholder="Date Range" />
+                </div>
+                <div>
+                  <select name="" class="form-control" title="Status">
+                    <option disabled="" selected="">Status</option>
+                    <option value=""> All</option>
+                    <option value=""> Active</option>
+                    <option value=""> Inactive </option>
+                    <option value=""> Inactive No Payment </option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-round btn-info dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-edit"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#" data-toggle="modal" data-target="#modal-add-promo"><i class="material-icons">note_add</i> Add </a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modal-edit-promo"><i class="material-icons">edit</i> Edit </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modal-delete-confirm"><i class="material-icons">delete_outline</i> Delete </a></li>
+                  </ul>
+                </div>
+              </div>
 
+            </div>
+            <# Table #>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="checkbox ml-5">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </th>
+                    <th>Date</th>
+                    <th>Seller</th>
+                    <th>Monthly Fee</th>
+                    <th># Order</th>
+                    <th>Subtotal</th>
+                    <th>Adjustment</th>
+                    <th>Total</th>
+                    <th>Payment Method</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <# Item 1 #>
+                  <tr>
+                    <td>
+                      <div class="checkbox ml-5">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>07/24/2018</td>
+                    <td>AllPrintableShop</td>
+                    <td>$9.99</td>
+                    <td>10</td>
+                    <td>$12.99</td>
+                    <td>0.00</td>
+                    <td>$35.99</td>
+                    <td>***1234</td>
+                    <td><span class="label label-default">Unpaid</span></td>
+                  </tr>
+                  <# Item 1 #>
+                  <tr>
+                    <td>
+                      <div class="checkbox ml-5">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>07/24/2018</td>
+                    <td>AwesomeStore</td>
+                    <td>$9.99</td>
+                    <td>10</td>
+                    <td>$29.99</td>
+                    <td>0.00</td>
+                    <td>$56.99</td>
+                    <td>***5678</td>
+                    <td><span class="label label-success">Paid</span></td>
+                  </tr>
 
-.btn-icon {
-    border: none;
-    border-radius: 20px;
-    position: relative;
-    margin: 0px 0px;
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    will-change: box-shadow, transform;
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #5ac0de;
-    color: #fff;
-    height: 41px;
-    width: 41px;
-    top: -3px;
-}
-
-
-.form-control-custom {
-    display: block;
-    width: 100%;
-    padding: 11px 11px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin: 10px 0px;
-    height: 42px;
-    min-width: 200px;
-    border-top-left-radius: 21px;
-    border-bottom-left-radius: 21px;
-}
-
-.btn-custom {
-    border: none;
-    border-radius: 0px;
-    position: relative;
-    padding: 11px 30px;
-    margin: 10px 0px;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    will-change: box-shadow, transform;
-    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+                </tbody>
+              </table>
+            </div>
+            <# Footer #>
+            <div class="form-toolbar mt-25">
+              <div class="page-entry">
+                <label class="form-group">Show
+                  <select class="form-control">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="-1">All</option>
+                  </select> Entries
+                </label>
+              </div>
+              <div>
+                <ul class="pagination pagination-info">
+                  <li><a href="javascript:void(0);"> prev</a></li>
+                  <li><a href="javascript:void(0);">1</a></li>
+                  <li><a href="javascript:void(0);">2</a></li>
+                  <li class="active"><a href="javascript:void(0);">3</a></li>
+                  <li><a href="javascript:void(0);">4</a></li>
+                  <li><a href="javascript:void(0);">5</a></li>
+                  <li><a href="javascript:void(0);">next </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

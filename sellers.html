@@ -188,6 +188,8 @@
       <div class="content">
           <div class="container-fluid">  
             <div class="row">
+              
+              <!-- Style 1 -->
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header card-header-icon" data-background-color="red">
@@ -382,20 +384,36 @@
                           </ul>
                         </div>
                       </div>
-                     
-                        <div class="row">
-                          <div class="col-md-4">
+                       
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Style 2 -->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-icon" data-background-color="blue">
+                    <i class="fas fa-users fa-2x"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4 class="card-title">Sellers</h4>
+                    <!-- Toolbar -->
+                    <div class="toolbar">       
+                      <div class="form-toolbar mt-25">                     
+                       <div class="row">
+                          <div class="col-md-4 col-sm-12">
                             <div class="input-group-custom">
-                              <input type="text" class="form-control-custom" placeholder="Search for...">
+                              <input type="text" class="form-control-custom  form-control-custom-rounded-group" placeholder="Search for...">
                               <span class="input-group-btn-custom">
-                                <button class="btn-custom btn-info" type="button">
+                                <button class="btn-custom btn-custom-rounded btn-info" type="button">
                                   <i class="fas fa-search"></i>
                                 </button>
                               </span>
                             </div>
                           </div>
-                          <div class="col-md-4 col-md-offset-4 text-right">
-                            <div class="select-custom inline">
+                          <div class="col-md-2 col-sm-12"></div>
+                          <div class="col-md-6 col-sm-12 text-right">
+                            <div class="select-custom select-custom-rounded inline mr-10">
                               <select class="form-control-custom">
                                 <option value="" disabled="" selected="">Status</option>
                                 <option value="">All</option>
@@ -404,51 +422,249 @@
                               </select>
                             </div>
 
-                            <div class="dropdown inline">
-                              <button class="btn-icon btn-secondary"><i class="fas fa-edit"></i></button>
+                            <div class="inline">
+                              <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-add-seller"><i class="fas fa-plus"></i></a>
+                            </div>
+                                                       
+                            <div class="inline">
+                              <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-edit-seller"><i class="fas fa-edit"></i></a>
                             </div>
 
-                            <div class="dropdown inline">
-                              <button class="btn-icon btn-secondary"><i class="fas fa-plus"></i></button>
-                            </div>
-
-                            <div class="dropdown inline">
-                              <button class="btn-icon btn-secondary"><i class="far fa-trash-alt"></i></button>
+                            <div class="inline">
+                              <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-delete-confirm"><i class="far fa-trash-alt"></i></a>
                             </div>
                           </div>
                         </div>
-                    
-                             
-                      <div>
-                        <input type="text" class="form-control-custom" id="" placeholder="Name">
                       </div>
-                    
-                      <div>
-                        <input type="date" class="form-control-custom" id="" placeholder="Blah">
-                      </div>
+                    </div>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>Etsy Shop</th>
+                            <th># Designs</th>
+                            <th># Orders</th>
+                            <th># Etsy ID's</th>
+                            <th>Registered</th>
+                            <th>Last Login</th>
+                            <th>Added CC</th>
+                            <th>Subscription Plan</th>
+                            <th>Status</th>
+                            <th>Billing Date</th>
+                            <th># Etsy Orders</th>
+                            <th># None Corjl Orders</th>
+                            <th>Referrals</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item 1 -->
+                          <tr>
+                            <td>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </td>
+                            <td>WordArt4U</td>
+                            <td>fbwordart4u@gmail.com</td>
+                            <td>Sheara C.</td>
+                            <td>WordArt4U</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>08/06/2018</td>
+                            <td>08/06/2018</td>
+                            <td>Yes</td>
+                            <td>$191.88 Yearly Fee <br>
+                              $0.45 Per Order Fee   
+                            </td>
+                            <td><span class="label label-success">Active</span></td>
+                            <td>08/06/2018</td>
+                            <td>324</td>
+                            <td>0</td>
+                            <td>Rhandie Davies</td>
+                          </tr>
+                          <!-- Item 2 -->
+                          <tr>
+                            <td>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </td>
+                            <td>Design12</td>
+                            <td>design12@gmail.com</td>
+                            <td>Shannon Reed</td>
+                            <td>WordArt4U</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>08/06/2018</td>
+                            <td>08/06/2018</td>
+                            <td>Yes</td>
+                            <td>$191.88 Yearly Fee <br>
+                              $0.45 Per Order Fee   
+                            </td>
+                            <td><span class="label label-success">Active</span></td>
+                            <td>08/06/2018</td>
+                            <td>324</td>
+                            <td>0</td>
+                            <td>Rhandie Davies</td>
+                          </tr>
+                          <!-- Item 3 -->
+                          <tr>
+                            <td>
+                              <div class="checkbox ml-5">
+                                <label>
+                                  <input type="checkbox" name="optionsCheckboxes">
+                                </label>
+                              </div>
+                            </td>
+                            <td>Gift4You</td>
+                            <td>gift123@gmail.com</td>
+                            <td>Blake Collins</td>
+                            <td>Gift123</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>08/06/2018</td>
+                            <td>08/06/2018</td>
+                            <td>Yes</td>
+                            <td>$191.88 Yearly Fee <br>
+                              $0.45 Per Order Fee   
+                            </td>
+                            <td><span class="label label-danger">Inactive</span></td>
+                            <td>08/06/2018</td>
+                            <td>324</td>
+                            <td>0</td>
+                            <td>Rhandie Davies</td>
+                          </tr>
+                          
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Footer -->
+                    <div class="form-toolbar mt-25">
+                          <div class="page-entry">
+                            <label class="form-group">Show
+                              <select class="form-control">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="-1">All</option>
+                              </select> Entries
+                            </label>
+                          </div>                           
+                        <div>
+                          <ul class="pagination pagination-info">
+                            <li><a href="javascript:void(0);"> prev</a></li>
+                            <li><a href="javascript:void(0);">1</a></li>
+                            <li><a href="javascript:void(0);">2</a></li>
+                            <li class="active"><a href="javascript:void(0);">3</a></li>
+                            <li><a href="javascript:void(0);">4</a></li>
+                            <li><a href="javascript:void(0);">5</a></li>
+                            <li><a href="javascript:void(0);">next </a></li>
+                          </ul>
+                        </div>
+                      </div>         
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Components -->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-icon" data-background-color="green">
+                    <i class="fas fa-tachometer-alt fa-2x"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4 class="card-title">Components</h4> 
+                    <!-- =========  ADDITIONAL  =========== -->    
+                    <hr>
+                    <h5>Custom Select</h5> 
+                      <div class="row">
+                          <div class="col-md-4 col-sm-12">
+                            <div class="input-group-custom">
+                              <input type="text" class="form-control-custom  form-control-custom-rounded-group" placeholder="Search for...">
+                              <span class="input-group-btn-custom">
+                                <button class="btn-custom btn-custom-rounded btn-info" type="button">
+                                  <i class="fas fa-search"></i>
+                                </button>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-md-2 col-sm-12"></div>
+                          <div class="col-md-6 col-sm-12 text-right">
+                            <div class="select-custom select-custom-rounded inline mr-10">
+                              <select class="form-control-custom">
+                                <option value="" disabled="" selected="">Status</option>
+                                <option value="">All</option>
+                                <option value="">Active</option>
+                                <option value="">Inactive</option>
+                              </select>
+                            </div>
 
-                      <span class="select-custom">
+                            <div class="inline">
+                              <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-add-seller"><i class="fas fa-plus"></i></a>
+                            </div>
+                                                       
+                            <div class="inline">
+                              <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-edit-seller"><i class="fas fa-edit"></i></a>
+                            </div>
+
+                            <div class="inline">
+                              <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-delete-confirm"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                          </div>
+                        </div>     
+                    <hr>
+                    <h5>Form</h5> 
+                      <div>
+                        <input type="text" class="form-control-custom form-control-custom-rounded" id="" placeholder="Name">
+                      </div>             
+                      <div>
+                        <input type="date" class="form-control-custom form-control-custom-rounded" id="" placeholder="Blah">
+                      </div>
+                      <span class="select-custom select-custom-rounded">
                           <select class="form-control-custom">
                             <option value="" disabled="" selected="">Status</option>
                             <option value="">All</option>
                             <option value="">Active</option>
                             <option value="">Inactive</option>
                           </select>
-                      </span>
+                      </span>                
                       <div class="input-group-custom">
-                        <input type="text" class="form-control-custom" placeholder="Search for...">
+                        <input type="text" class="form-control-custom form-control-custom-rounded-group" placeholder="Search for...">
                         <span class="input-group-btn-custom">
-                          <button class="btn-custom btn-info" type="button"><i class="fas fa-search"></i></button>
+                          <button class="btn-custom btn-custom-rounded btn-info" type="button"><i class="fas fa-search"></i></button>
                         </span>
                       </div>
-                    
-
-                    
-                    
+                    <h5>Icon Button</h5> 
+                                 
+                    <a href="#" type="button" class="btn btn-info btn-circle btn-md" data-toggle="modal" data-target="#modal-add-seller"><i class="fas fa-plus"></i></a>
+                    <button type="button" class="btn btn-default btn-circle btn-md"><i class="fas fa-plus"></i></button>
+                    <button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-plus"></i></button>
+                      
+                    <!-- =========  /ADDITIONAL  =========== -->
                     
                   </div>
                 </div>
               </div>
+              
             </div>    
           </div>
         </div>
